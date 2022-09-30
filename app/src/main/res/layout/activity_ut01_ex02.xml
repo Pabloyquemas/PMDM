@@ -4,19 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context=".ut01.ex02.presentation.Ut01Ex02Activity">
+    <ImageView
+        android:id="@+id/icondices"
+        android:layout_width="@dimen/size_image"
+        android:layout_height="@dimen/size_image"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_dados" />
 
-    <TextView
-
-        android:layout_width="50dp"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/title"
-        android:textAlignment="center"
-        android:maxLines="5"
-        android:ellipsize="end"
-        android:textColor="@color/red" />
-    <TextView
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            android:text="@string/fecha"
+            android:textcolor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            android:maxLines="1"
+            android:text="@string/titulo"
+            android:textcolor="@color/black"/>
+
+        <TextView
+            android:layout_width="490dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:textAlignment="center"
+            android:maxLines="2"
+            android:orientation="horizontal"
+            android:text="@string/contenido" />
+
+    </LinearLayout>
+
+
+    <!--<TextView
 
         android:layout_width="50dp"
         android:layout_height="wrap_content"
@@ -25,18 +55,13 @@
         android:maxLines="1"
         android:ellipsize="end"
         android:textColor="@color/red" />
-    <TextView
-        android:id="@+id/label_title"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:text="@string/title"
-        android:textAlignment="center"
-        android:minLines="5"
-        android:ellipsize="end"
-        android:textColor="@color/red" />
+
+
     <ImageView
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        app:srcCompat=""/>
+        android:id="@+id/iconleon"
+        android:layout_width="@dimen/size_image"
+        android:layout_height="@dimen/size_image"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_lion2" />-->
 
 </LinearLayout>

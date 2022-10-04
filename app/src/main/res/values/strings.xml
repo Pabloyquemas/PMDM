@@ -2,6 +2,6 @@
     <string name="app_name">PMDM2022</string>
     <string name="fecha">30/09/2022</string>
     <string name="titulo">Dados</string>
-    <string name="contenido">Un dado es un objeto preparado para mostrar un resultado aleatorio cuando es lanzado sobre una superficie horizontal, desde la mano o mediante un cubilete, en cuyo caso los resultados ocurren con una probabilidad que se distribuye mediante una distribución uniforme discreta.</string>
+    <string name="contenido">Un dado es un objeto preparado para mostrar un resultado aleatorio</string>
     <string name="titulo2">Titulo</string>
 </resources>

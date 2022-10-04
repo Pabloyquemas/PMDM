@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
                 android:maxLines="1"
@@ -30,38 +30,49 @@
                 android:orientation="horizontal"
                 android:text="@string/contenido" />
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    app:srcCompat="@drawable/ic_star" />
+                    app:srcCompat="@drawable/ic_star"
+                    app:tint="@color/yellow" />
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    app:srcCompat="@drawable/ic_star" />
+                    app:srcCompat="@drawable/ic_star"
+                    app:tint="@color/yellow"/>
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    app:srcCompat="@drawable/ic_star" />
+                    app:srcCompat="@drawable/ic_star"
+                    app:tint="@color/yellow"/>
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    app:srcCompat="@drawable/ic_star" />
+                    app:srcCompat="@drawable/ic_star"
+                    app:tint="@color/yellow"/>
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    app:srcCompat="@drawable/ic_star" />
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    app:srcCompat="@drawable/ic_heart" />
+                    app:srcCompat="@drawable/ic_star"
+                    app:tint="@color/yellow"/>
+                <LinearLayout
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="@dimen/size_icon"
+                        android:layout_height="@dimen/size_icon"
+                        app:srcCompat="@drawable/ic_heart"
+                        app:tint="@color/red" />
+
+                </LinearLayout>
+
             </LinearLayout>
 
         </LinearLayout>
-
-
-
 
 </LinearLayout>

@@ -97,5 +97,5 @@
             android:text="@string/Precio"
             android:textColor="@color/black"
             android:textStyle="bold"/>
-    </RelativeLayout>
+
 </RelativeLayout>

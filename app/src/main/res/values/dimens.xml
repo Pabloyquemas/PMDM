@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name = "size_image">240dp</dimen>
+    <dimen name = "size_star">24dp</dimen>
+    <dimen name = "size_margin">20dp</dimen>
+    <dimen name = "size_margin_text">5dp</dimen>
+    <dimen name = "size_margin_precio">150dp</dimen>
+
 </resources>

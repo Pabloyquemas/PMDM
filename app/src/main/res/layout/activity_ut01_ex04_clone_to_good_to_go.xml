@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ut01.ex04.Ut01Ex04CloneToGoodToGo">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_image"
+            android:layout_margin="@dimen/size_margin"
+            android:background="@drawable/ic_fruit"/>
+
+        <TextView
+            android:id="@+id/name_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/img1"
+            android:layout_alignRight="@id/img1"
+            android:text="@string/name"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <ImageView
+            android:id="@+id/heart"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_star"
+            android:layout_marginTop="@dimen/size_margin_text"
+            android:layout_marginLeft="@dimen/size_margin"
+            android:background="@color/orange"
+            android:src="@drawable/ic_star"
+            android:layout_below="@id/content"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin_top="@dimen/size_margin_text"
+            android:layout_marginLeft="@dimen/size_margin"
+            android:layout_below="@id/img1"
+            android:text="@string/sorpresa"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin_top="@dimen/size_margin_text"
+            android:layout_marginLeft="@dimen/size_margin"
+            android:layout_below="@id/title1"
+            android:text="@string/content"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_star"
+            android:layout_marginTop="@dimen/size_margin_text"
+            android:layout_marginLeft="@dimen/size_margin"
+            android:background="@color/orange"
+            android:src="@drawable/ic_star"
+            android:layout_below="@id/content"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/puntuacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_margin_text"
+            android:layout_marginLeft="@dimen/size_margin_text"
+            android:layout_below="@id/content"
+            android:layout_toEndOf="@id/star"
+            android:text="@string/puntuacion"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_margin_text"
+            android:layout_marginLeft="@dimen/size_margin"
+            android:layout_below="@id/content"
+            android:layout_toEndOf="@id/puntuacion"
+            android:text="@string/km"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/precio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_margin_text"
+            android:layout_marginLeft="@dimen/size_margin_precio"
+            android:layout_below="@id/content"
+            android:layout_toEndOf="@id/content"
+            android:text="@string/Precio"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+</RelativeLayout>

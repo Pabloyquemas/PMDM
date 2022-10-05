@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--ex02b con relative-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ut01.ex03.ut01ex03bActivity">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/ic_swap" />
+
+    <TextView
+        android:id="@+id/titulo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:maxLines="1"
+        android:text="@string/titulo2"
+        android:layout_below="@id/img1"/>
+    <TextView
+        android:id="@+id/contenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulo1"
+        android:ellipsize="end"
+        android:textAlignment="center"
+        android:maxLines="2"
+        android:orientation="horizontal"
+        android:text="@string/contenido" />
+    <ImageView
+        android:id="@+id/star1"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/contenido"
+        app:srcCompat="@drawable/ic_star"
+        app:tint="@color/yellow" />
+    <ImageView
+        android:id="@+id/star2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/contenido"
+        android:layout_toEndOf="@id/star1"
+        app:srcCompat="@drawable/ic_star"
+        app:tint="@color/yellow" />
+    <ImageView
+        android:id="@+id/star3"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/contenido"
+        android:layout_toEndOf="@id/star2"
+        app:srcCompat="@drawable/ic_star"
+        app:tint="@color/yellow" />
+    <ImageView
+        android:id="@+id/star4"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/contenido"
+        android:layout_toEndOf="@id/star3"
+        app:srcCompat="@drawable/ic_star"
+        app:tint="@color/yellow" />
+    <ImageView
+        android:layout_width="@dimen/size_icon"
+        android:layout_height="@dimen/size_icon"
+        app:srcCompat="@drawable/ic_heart"
+        android:layout_below="@id/contenido"
+        android:layout_toEndOf="@id/contenido"
+        app:tint="@color/red" />
+</RelativeLayout>

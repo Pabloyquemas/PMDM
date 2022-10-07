@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ut01.AvilaEnTapas.Ut01AvilaEnTapasActivity">
+
+    <RelativeLayout
+        android:id="@+id/part1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_image"
+        android:layout_marginStart="@dimen/size_margin"
+        android:layout_marginTop="@dimen/size_margin"
+        android:layout_marginEnd="@dimen/size_margin"
+        android:layout_marginBottom="@dimen/size_margin"
+        android:background="@drawable/ic_Tapa">
+
+        <RelativeLayout
+            android:layout_width="58dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="@dimen/size_margin"
+            android:layout_marginTop="@dimen/size_margin"
+            android:layout_marginEnd="@dimen/size_margin"
+            android:layout_marginBottom="@dimen/size_margin"
+            android:background="@color/white_transparent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginStart="@dimen/size_margin"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="@dimen/size_margin"
+                android:layout_marginBottom="@dimen/size_margin"
+                android:text="1º"
+                android:textColor="@color/dark_red"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/ic_trofeo"
+                app:tint="@color/dark_red" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/name_tapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/part1"
+        android:layout_marginLeft="100dp"
+        android:text="@string/name_tapa"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/name_restaurant"
+        android:layout_below="@id/name_tapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="@dimen/size_margin"
+        android:textColor="@color/black"
+        android:text="@string/name_restaurant"/>
+    <TextView
+        android:id="@+id/points"
+        android:layout_below="@id/name_restaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="@dimen/size_margin"
+        android:text="@string/points"/>
+    <TextView
+        android:id="@+id/media"
+        android:layout_toEndOf="@id/points"
+        android:layout_below="@id/name_restaurant"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/media"/>
+    <ImageView
+        android:id="@+id/star"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@id/media"
+        android:layout_below="@id/name_restaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_star"
+        app:tint="@color/dark_yellow"
+        android:backgroundTint="@color/dark_yellow"/>
+    <ImageView
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_share"
+        android:layout_toEndOf="@id/name_tapa"
+        android:layout_below="@id/name_restaurant"
+        app:tint="@color/dark_red" />
+    <ImageView
+        android:layout_toEndOf="@id/share"
+        android:layout_below="@id/name_restaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        app:tint="@color/dark_red"
+        android:src="@drawable/ic_favorite"/>
+</RelativeLayout>

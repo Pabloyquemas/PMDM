@@ -4,4 +4,8 @@
     <string name="titulo">Dados</string>
     <string name="contenido">Un dado es un objeto preparado para mostrar un resultado aleatorio cuando es lanzado sobre una superficie horizontal, desde la mano o mediante un cubilete, en cuyo caso los resultados ocurren con una probabilidad que se distribuye mediante una distribución uniforme discreta.</string>
     <string name="titulo2">Titulo</string>
+    <string name="name_tapa">Lengua estofada con patatas</string>
+    <string name="name_restaurant">Posada de la fruta</string>
+    <string name="points">Total: 0pts</string>
+    <string name="media">Media: 0.0</string>
 </resources>
